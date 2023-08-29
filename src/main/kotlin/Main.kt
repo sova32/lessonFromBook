@@ -25,11 +25,13 @@ return "Madrigal"
 }
 
 
-var heroName: String = "QQQQQQQ"
+
+var heroName = ""
+val player = `Player.kt`()
 
 fun main() {
- //   heroName = promptHeroName()
+    heroName = promptHeroName()
        // changeNarratorMood()
- //   narrate("$heroName, ${createTitle(heroName)}, heads to the town square")
+    narrate("$heroName, ${createTitle(heroName)}, heads to the town square")
     visitTavern()
 }

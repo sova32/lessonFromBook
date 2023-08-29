@@ -6,10 +6,10 @@ var narrationModifier = { message: String ->
     message.uppercase() + "!".repeat(numExclamationPoints)
 }
 
+//inline fun narrate( message: String, modifier: (String) -> String = { narrationModifier(it) } ) {
 inline fun narrate( message: String, modifier: (String) -> String = { it } ) {
-    println (modifier(message))
+        println (modifier(message))
 }
-
 //fun changeNarratorMood() {
 //    val mood: String
 //    val modifier: (String) -> String
